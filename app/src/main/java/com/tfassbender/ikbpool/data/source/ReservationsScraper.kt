@@ -68,8 +68,12 @@ class ReservationsScraper(
     )
 
     companion object {
-        // Verify against the widget UI: top three lanes in the grid should be these IDs.
-        // If lanes 1-3 appear at the bottom instead, swap to 71112/71111/71110.
+        // Verified against the Eversports widget UI for Hallenbad Höttinger Au:
+        //   71107 = 25m Bahn 1      71112 = 25m Bahn 6
+        //   71108 = 25m Bahn 2      71113 = Lehrbecken Bahn 1
+        //   71109 = 25m Bahn 3      71114 = Lehrbecken Bahn 2
+        //   71110 = 25m Bahn 4      87211 = Lehrbecken Bahn 3
+        //   71111 = 25m Bahn 5
         const val LANE_1_COURT_ID = 71107
         const val LANE_2_COURT_ID = 71108
         const val LANE_3_COURT_ID = 71109
